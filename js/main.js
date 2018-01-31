@@ -74,3 +74,60 @@ console.log(addNumbers(100, 3000));
 if (addNumbers(50, 50) === 100) {
   console.log('Congrats !!');
 }
+//-----------------------------------------------------------
+
+//This function does not return anything , we just 'do something' immediately.
+//This is a named function.
+function fullName(fName, lName) {
+ console.log(fName + ' ' + lName);
+}
+fullName('Matt', 'Tounkara');
+
+//-----------------------------------------------------------
+
+// we can also create a function and store it in a variable.
+
+var myGreatFunc = function(){
+  console.log('Function stored in a var');
+};
+myGreatFunc();
+
+//------------------------------------------------------
+// 1) Write a function that accepts an argument. Let's call the arg 'door'.
+// 2) Based on the value of 'door', console.log a prize.
+
+function door(theDoor) {
+  if (theDoor === 'Opened') {
+   console.log('The door is Opened!');
+ }else {
+   console.log('The door is closed');
+ }
+}
+door('Opened');
+door('closed');
+
+//   Or
+
+// 1) Write a function that accepts an argument. Let's call the arg 'door'.
+function openDoor(door){
+  console.log(door);
+}
+// 2) Based on the value of 'door', console.log a prize.
+openDoor('red');
+
+//Based on the value of door , log a prize.
+if (door === 'green'){
+  console.log('You opened the green door. You win a skateboard');
+}else if (door === 'red'){
+  console.log('You opened the red door. You win a scooter');
+}
+//-------------------------------------------------------
+
+var foo = {
+  color: 'red'
+};
+
+console.log(typeof foo.color);
+
+var cartoons = ['garfield', 'heathcliff', 'snoopy']
+console.log(cartoons.length); // log 3
